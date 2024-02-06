@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
+import { useEffect } from 'react';
+import { getMobileData } from './Redux/react-redux/action';
 
 function App() {
+    
+  const reducerData = useSelector(state=>state);
+  const dispatch = useDispatch();
+  console.log(reducerData) ;
+  //accessing of initial State   useSelector
+  
+  useEffect(()=>{
+    //calling action funtcion vala logic rahega    useDispatch
+    dispatch(getMobileData())
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      Mobile Data
     </div>
   );
 }
