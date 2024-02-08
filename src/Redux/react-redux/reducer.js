@@ -18,7 +18,7 @@ const initialState={
 // }
 
 export default function applicationReducer(state=initialState,action){
-       
+       debugger
     switch(action.type){
 
         case MOBILEDATA:

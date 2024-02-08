@@ -4,7 +4,7 @@ import { CAMERADATA, MOBILEDATA } from "./constant"
 
 
 const getMobileData =(parameterData)=>(dispatch)=>{
-
+      debugger
     // data ko dispatch 
     // to reducer
 
@@ -12,7 +12,7 @@ const getMobileData =(parameterData)=>(dispatch)=>{
 
     dispatch({
         type:MOBILEDATA,
-        payload:{data:["Mobile1","MObile2","Mobile3","Mobile4"] }
+        payload: {data:parameterData}
     })
 }
 

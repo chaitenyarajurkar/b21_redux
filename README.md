@@ -76,3 +76,6 @@ react-redux@8.1.3
 redux@4.2.1
 redux-thunk@2.4.2,
 redux-devtools-extension@2.13.9
+
+
+extension ==>> Redux DevTools
